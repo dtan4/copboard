@@ -3,5 +3,8 @@ html
   head
     meta charset="utf-8"
     title CopBoard
+    link href=stylesheet_path("application") rel="stylesheet"
   body
-    == yield
+    .container
+      == yield
+    script src=javascript_path("application")
