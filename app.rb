@@ -15,6 +15,11 @@ class App < Sinatra::Base
     sprockets.append_path Bootstrap.fonts_path
   end
 
+  configure :development do
+    require "sinatra/reloader"
+    register Sinatra::Reloader
+  end
+
   helpers Sprockets::Helpers
 
   get "/" do

@@ -9,3 +9,7 @@ gem "bootstrap-sass"
 gem "sprockets"
 gem "sprockets-helpers"
 gem "sprockets-sass"
+
+group :development do
+  gem "sinatra-reloader", require: "sinatra/reloader"
+end
