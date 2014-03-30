@@ -12,4 +12,5 @@ gem "sprockets-sass"
 
 group :development do
   gem "sinatra-reloader", require: "sinatra/reloader"
+  gem "guard-livereload", require: false
 end
